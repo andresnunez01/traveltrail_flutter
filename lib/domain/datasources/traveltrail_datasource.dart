@@ -6,7 +6,7 @@ class TraveltrailDatasource {
   Future<List<Travel>> getTravels() async{
      try{
       var dio = Dio();
-      dio.options.baseUrl = "https://traveltrail1.ddns.net/api";
+      dio.options.baseUrl = "https://traveltralflutter.ddns.net/api";
       // dio.interceptors.add(ApiInterceptor());
       final response = await dio.get("/travels");
       final data = response.data as List;
@@ -23,7 +23,7 @@ class TraveltrailDatasource {
     try{
 
       var dio = Dio();
-      dio.options.baseUrl = "https://traveltrail1.ddns.net/api";
+      dio.options.baseUrl = "https://traveltralflutter.ddns.net/api";
       final response = await dio.post("/travels",
         data: {
           "locationName": travel.locationName.trim(),
