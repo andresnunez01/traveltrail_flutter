@@ -10,9 +10,9 @@ class BottomNavbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return CurvedNavigationBar(
       index: index,
-      color: Colors.black,
+      color: const Color.fromARGB(255, 67, 179, 187),
       backgroundColor: Colors.white,
-      buttonBackgroundColor: Colors.blue,
+      buttonBackgroundColor: const Color.fromARGB(255, 125, 34, 185),
       onTap: (value){
         switch(value){
           case 0:

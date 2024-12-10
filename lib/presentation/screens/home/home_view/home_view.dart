@@ -37,8 +37,8 @@ class _HomeViewState extends State<HomeView> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                InfoCard(title: "Viajes Realizados", value: travelProvider.viajesCount.toString(), color: Colors.blueAccent),
-                InfoCard(title: "Por Visitar", value: travelProvider.porViajarCount.toString(), color: Colors.blueGrey),
+                InfoCard(title: "Viajes Realizados", value: travelProvider.viajesCount.toString(), color: const Color.fromARGB(255, 67, 179, 187)),
+                InfoCard(title: "Por Visitar", value: travelProvider.porViajarCount.toString(), color: const Color.fromARGB(255, 125, 34, 185)),
               ],
             ),
             const SizedBox(height: 20,),
@@ -55,7 +55,7 @@ class _HomeViewState extends State<HomeView> {
                   child: ListTile(
                     title: Text(travel.locationName),
                     subtitle: Text(travel.description),
-                    leading: const Icon(Icons.card_travel, color: Colors.amberAccent,),
+                    leading: const Icon(Icons.place, color: Colors.purpleAccent,),
                     trailing: Icon(Icons.check_circle, color: travel.isEmailSent ? Colors.green : Colors.deepOrange,),
                   ),
                 );
